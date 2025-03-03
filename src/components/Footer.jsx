@@ -28,7 +28,8 @@ const Footer = () => {
           <div className="text-center">
             <ul className="flex justify-center space-x-6 text-sm text-gray-300">
               <li>
-                <Link to=""
+                <Link
+                  to=""
                   href="#privacy"
                   className="relative hover:text-white transition text-sm sm:text-lg after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 
            after:bg-white after:transition-all after:duration-300 hover:after:w-full"
@@ -37,7 +38,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to=""
+                <Link
+                  to=""
                   href="#terms"
                   className="relative hover:text-white transition text-sm sm:text-lg after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 
            after:bg-white after:transition-all after:duration-300 hover:after:w-full"
@@ -46,7 +48,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to=""
+                <Link
+                  to=""
                   href="#support"
                   className="relative hover:text-white transition text-sm sm:text-lg after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 
            after:bg-white after:transition-all after:duration-300 hover:after:w-full"
@@ -55,7 +58,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to=""
+                <Link
+                  to=""
                   href="#contact"
                   className="relative hover:text-white transition text-sm sm:text-lg after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 
            after:bg-white after:transition-all after:duration-300 hover:after:w-full"
@@ -64,8 +68,16 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-            <p className="mt-4 text-sm text-gray-400">
-              &copy; {new Date().getFullYear()} Xendex. All Rights Reserved.
+            <p className="mt-4 text-xs text-gray-400">
+              &copy; {new Date().getFullYear()} Xendex. All Rights Reserved |
+              developer{" "}
+              <Link
+                to={"mailto:visionsecret10@gmail.com"}
+                className="relative hover:text-white transition text-xs sm:text-xs font-extrabold after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 
+           after:bg-white after:transition-all after:duration-300 hover:after:w-full cursor-pointer"
+              >
+                Contact
+              </Link>
             </p>
           </div>
 
@@ -77,7 +89,8 @@ const Footer = () => {
               { href: "https://instagram.com", icon: <FaInstagram /> },
               { href: "https://linkedin.com", icon: <FaLinkedin /> },
             ].map((social, index) => (
-              <Link to=""
+              <Link
+                to=""
                 key={index}
                 href={social.href}
                 target="_blank"
